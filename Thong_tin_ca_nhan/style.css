@@ -1,0 +1,73 @@
+body{
+    background-color: #D5D5D5;
+    font-family: system-ui;
+}
+
+.container{
+    background-color: #E9E7EA;
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0px 10px 50px #858585;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    column-gap: 5%;
+    row-gap: 30px;
+
+}
+.avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.avatar{
+    display: flex;
+    justify-content: end;
+
+}
+.name{
+    padding-left: 30px;
+    border-left: 3px solid #000;
+}
+.name h1P{
+    font-weight: 30px;
+    margin: 0 0 5px;
+}
+.name .specialize{
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+} 
+.name .contact{
+    padding: 0%;
+    list-style: none;
+}
+.name .contact span{
+   display: inline-block;
+   background-color: black; 
+   color: #fff;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   text-align: center;
+   font-size: small;
+   margin-right: 20px;
+}
+.infor ul{
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    line-height: 30px;
+}
+.intro{
+    padding-left:30px;
+    border-left: 3px solid #000;
+    text-align: justify;
+}
+h2 {
+    padding: 0;
+    margin: 0 0 20px;
+}
