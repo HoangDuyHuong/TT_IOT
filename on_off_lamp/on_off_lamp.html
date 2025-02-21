@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controll Lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WED ON OFF LAMP</h1>
+        <p>Nhiệt Độ: <span id="temp">20</span></p>
+        <div class="device">
+                <div class="dev">
+                    <img id="img_01" src="./img/light_off.png" alt="ảnh đèn tắt">
+                    <P>Đèn 01</P>
+                    <button id="btn_on_01" class="button">ON</button>
+                    <button id="btn_off_01" class="button">OFF</button>
+                </div>
+                <div class="dev">
+                    <img id="img_02" src="./img/light_off.png" alt="ảnh đèn tắt">
+                    <P>Đèn 02</P>
+                    <button id="btn_on_02" class="button">ON</button>
+                    <button id="btn_off_02" class="button">OFF</button>
+                </div>
+                <div class="dev">
+                    <img id="img_03" src="./img/light_off.png" alt="ảnh đèn tắt">
+                    <P>Đèn 03</P>
+                    <button id="btn_on_03" class="button">ON</button>
+                    <button id="btn_off_03" class="button">OFF</button>
+                </div>
+                <div class="dev">
+                    <img id="img_04" src="./img/light_off.png" alt="ảnh đèn tắt">
+                    <P>Đèn 04</P>
+                    <button id="btn_on_04" class="button">ON</button>
+                    <button id="btn_off_04" class="button">OFF</button>
+                </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    
+    <script src="./control.js"></script>
+</body>
+</html>
