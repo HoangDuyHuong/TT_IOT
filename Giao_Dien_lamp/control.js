@@ -1,5 +1,3 @@
-
-
 switch_01.addEventListener('change', () => {
     if (switch_01.checked) {
         img_01.src = 'img/light_on.png';

@@ -25,7 +25,8 @@ body{
 .container{
     margin: 1% 30%;
     text-align: center;
-    background: linear-gradient(109.6deg, rgb(151, 213, 255) 11.2%, rgb(255, 155, 185) 91.1%);    box-sizing: border-box;
+    background: linear-gradient(109.6deg, rgb(151, 213, 255) 11.2%, rgb(255, 155, 185) 91.1%);    
+    box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: solid 2px red;
     border-radius: 3%

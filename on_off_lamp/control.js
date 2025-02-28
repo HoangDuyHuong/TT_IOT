@@ -37,7 +37,6 @@ database.ref("/TT_IOT_on_off_Lamp").on('value', function(snapshot) {
         } else {
             img_01.src = "./img/light_off.png";
         }
-
 })
 
 // auto control on firebase
