@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office</title>
+    <link rel="stylesheet" href="./style/style_office.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./main.html">
+            <button id="button_back">
+                <img id="back" src="./img/return.png" alt="back">
+            </button>
+            </a>
+            <p id="title">Office</p>
+        </div>
+        <div class="dev">
+            <div class="lamp">
+                <img class="img_light" id="laptop" src="./img/laptop_off.png" alt="laptop">
+                <p id="light">Laptop</p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_laptop" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="lamp">
+                <img class="img_light" id="monitor" src="./img/monitor_off.png" alt="monitor">
+                <p id="light">monitor</p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_monitor" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="lamp">
+                <img class="img_light" id="light_office" src="./img/light_off.png" alt="lamp">
+                <p id="light">Lamp</p>
+                <div class="Switch__container">
+                    <label class="switch">  
+                        <input id="sw_light_office" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="lamp">
+                <img class="img_light" id="loa" src="./img/loa_off.png" alt="Loa">
+                <p id="light">Speaker</p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_loa" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./control/office.js"></script>
+</body>
+
+</html>

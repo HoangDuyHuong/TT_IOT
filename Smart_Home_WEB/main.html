@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My SmartHome</title>
     <link rel="stylesheet" href="./style/style_main.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <div class="img_home">
-                <img src="./img/home.png" alt="home picture">
+                <img id="img_home_id" src="./img/home.png" alt="home picture">
             </div>
             <div class="title_main">
-                <h1>Hello EveryOne</h1> <br>
-                <h2>Welcome To My Home</h2>
+                <h1>Hello EveryOne 👋 </h1> <br>
+                <h2>Welcome To My Home</h2> 
             </div>
             <div class="img_avarta">
-
+                <img id="img_avarta_id" src="./img/avarta.jpg" alt="avartar">
             </div>
         </div>
         <div class="main">
-
+            <div class="room">
+                <a class="link" href="./Livingroom.html">
+                <button class="button" id="button_room_living">
+                    <div class="living_room" id="living">
+                        <img id="living_img" src="./img/living_img.png" alt="livingroom">
+                        <p id="room_text">Living Room</p>
+                        <p id="device_text">4 Devices</p>
+                    </div>
+                </button>
+                </a>
+                <a class="link" href="./Kitchen.html" >
+                <button class="button" id="button_room_kichen">
+                    <div id="kichen" class="living_room">
+                        <img id="living_img" src="./img/kichen_img.png" alt="livingroom">
+                        <p id="room_text">kichen</p>
+                        <p id="device_text">4 Devices</p>
+                    </div>
+                </button>
+                </a>
+                <a class="link" href="./Bathroom.html" >
+                <button class="button" id="button_room_bath">
+                    <div id="bath" class="living_room">
+                        <img id="living_img" src="./img/bathroom_img.png" alt="livingroom">
+                        <p id="room_text">BathRoom</p>
+                        <p id="device_text">4 Devices</p>
+                    </div>
+                </button>
+                </a>
+                <a class="link" href="./Bedroom.html" >
+                <button class="button" id="button_room_bed">
+                    <div id="bed" class="living_room">
+                        <img id="living_img" src="./img/bedroom_img.png" alt="livingroom">
+                        <p id="room_text">BedRoom</p>
+                        <p id="device_text">4 Devices</p>
+                    </div>
+                </button>
+                </a>
+                <a class="link" href="./office.html" >
+                <button class="button" id="button_room_office">
+                    <div id="office" class="living_room">
+                        <img id="living_img" src="./img/office_img.png" alt="livingroom">
+                        <p id="room_text">Office</p>
+                        <p id="device_text">4 Devices</p>
+                    </div>
+                </button>
+                </a>
+                <a class="link" href="./Diningroom.html" >
+                <button class="button" id="button_room_dining">
+                    <div id="dining" class="living_room">
+                        <img id="living_img" src="./img/diningroom_img.png" alt="livingroom">
+                        <p id="room_text">Dining room</p>
+                        <p id="device_text">4 Devices</p>
+                    </div>
+                </button>
+                </a>
+            </div>
         </div>
     </div>
     <script src="./control/main.js"></script>
 </body>
+
 </html>

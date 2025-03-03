@@ -16,8 +16,6 @@ firebase.initializeApp(firebaseConfig);
 // Initialize Realtime Database and get a reference to the service
 const database = firebase.database();
 
-
-
 const sw_tv = document.getElementById('sw_tv');
 
 // xu ly xu kien

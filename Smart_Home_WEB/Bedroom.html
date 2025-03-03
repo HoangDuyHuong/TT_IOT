@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebroom</title>
+    <link rel="stylesheet" href="./style/style_Bed.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./main.html">
+            <button id="button_back">
+                <img id="back" src="./img/return.png" alt="back">
+            </button>
+            </a>
+            <p id="title">Bedroom</p>
+        </div>
+        <div class="dev">
+            <div class="lamp">
+                <img class="img_light" id="light" src="./img/light_off.png" alt="den">
+                <p id="light">Light </p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_light" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="lamp">
+                <img class="img_light" id="Conditioner" src="./img/air-conditioner_off.png" alt="air-conditioner">
+                <p id="light">Air Conditioner</p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_conditioner" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="lamp">
+                <img class="img_light" id="loa" src="./img/loa_off.png" alt="loa">
+                <p id="light">Speaker</p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_loa" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="lamp">
+                <img class="img_light" id="tv" src="./img/TV_off.png" alt="TV">
+                <p id="light">TV</p>
+                <div class="Switch__container">
+                    <label class="switch">
+                        <input id="sw_tv" type="checkbox">
+                        <div>
+                            <span></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./control/Bed.js"></script>
+</body>
+
+</html>
