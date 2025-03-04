@@ -92,6 +92,14 @@ database.ref("/TT_IOT_on_off_Lamp/Temp").on('value', function (snapshot) {
     // console.log(t);
 })
 
+// auto update data from firebase
+const hum = document.getElementById('hum');
+database.ref("/TT_IOT_on_off_Lamp/humidity").on('value', function (snapshot) {
+    let t = snapshot.val();
+    hum.innerHTML = t;
+    // console.log(t);
+})
+
 database.ref("/TT_IOT_on_off_Lamp").on('value', function (snapshot) {
     let t = snapshot.val();
     console.log(t);

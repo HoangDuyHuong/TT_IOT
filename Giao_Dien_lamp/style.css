@@ -19,8 +19,11 @@ body{
     padding: 10px;
     font-size: 25px;
 }
-span{
+#temp{
     color: red;
+}
+#hum{
+  color: #2196f3;
 }
 .device{
     background-color: lemonchiffon;
