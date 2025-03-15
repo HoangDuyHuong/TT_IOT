@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homea Smart Home</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Thanh trạng thái -->
+    <div class="status-bar">
+        <span>9:41</span>
+        <div class="status-icons">
+            <span>📶</span>
+            <span>🔋</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">H</div>
+        <div class="map">
+            <img src="./img/map_img.png" alt="Map" class="map-image">
+            <div class="home-pin">🏠</div>
+        </div>
+        <div class="home-info">
+            <h2>Hướng's Home</h2>
+            <p>10 Devices</p>
+            <div class="weather">
+                <span>🌧️ Little rain</span>
+                <span>Feels like 24°C</span>
+            </div>
+        </div>
+        <div class="header-icons">
+            <span>🔍</span>
+            <span>🔔</span>
+        </div>
+    </div>
+
+    <!-- Favorites Section -->
+    <div class="favorites">
+        <h3>Favorites</h3>
+        <div class="device-card" onclick="toggleDevice('ac')">
+            <div class="device-icon">❄️</div>
+            <div class="device-info">
+                <p>Bedroom Air Conditioner</p>
+                <span>1 Device</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="ac" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="device-card" onclick="toggleDevice('lights')">
+            <div class="device-icon">💡</div>
+            <div class="device-info">
+                <p>Bedroom Main Lights</p>
+                <span>2 Devices</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="lights">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Connected Devices Section -->
+    <div class="connected-devices">
+        <h3>Connected Devices</h3>
+        <div class="room-tabs">
+            <button class="room-tab active" type="button">Living Room</button>
+            <button class="room-tab" type="button">Bedroom</button>
+            <button class="room-tab" type="button">Kitchen</button>
+            <button class="room-tab" type="button">Bathroom</button>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <button class="nav-item active" onclick="selectNav('home')">🏠</button>
+        <button class="nav-item" onclick="selectNav('devices')">📊</button>
+        <button class="nav-item" onclick="selectNav('automation')">⏰</button>
+        <button class="nav-item" onclick="selectNav('profile')">👤</button>
+    </div>
+
+    <script src="./control.js"></script>
+</body>
+</html>

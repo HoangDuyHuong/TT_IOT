@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHome - Ứng dụng Nhà thông minh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="phone-container">
+        <div class="status-bar">
+            <div class="time">9:41</div>
+            <div class="status-icons">
+                <span>📶</span>
+                <span>🛜</span>
+                <span>🔋</span>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <img src="./img/map_img.png" alt="map" class="map-image">
+            <div class="search-bar">
+                <div class="logo">
+                    <span class="HDH">HDH</span>
+                    <span>Home</span>
+                </div>
+                <div class="icons">
+                    <span>🔍</span>
+                    <span>🔔</span>
+                </div>
+            </div>
+
+            <div class="home-marker">🏠</div>
+        </div>
+
+        <div class="home-info">
+            <div class="home-title">
+                <span>⬅️</span>
+                <h3>📍Hướng's Home</h3>
+                <span>➡️</span>
+
+            </div>
+            <div class="home-address">
+                <span></span>
+            </div>
+            <div class="devices-count">10 Devices</div>
+        </div>
+
+        <div class="weather">
+            <div class="weather-condition">
+                <span>🌦️</span>
+                <span class="rain">Little rain</span>
+            </div>
+            <div class="temperature">
+                <span>Feels like </span>
+                <span class="degree">25°C</span>
+            </div>
+        </div>
+
+        <div class="section-title">Favorites</div>
+
+        <div class="favorites">
+            <div class="favorite-devices">
+
+                <div class="device-card">
+                    <div class="dev">
+                    <img class="ml" id="img_ml_main" src="./img/air-conditioner_off.png" alt="ml">
+                    <div class="Switch__container">
+                        <label class="switch">
+                            <input id="sw_ml_main" type="checkbox">
+                            <div>
+                                <span></span>
+                            </div>
+                        </label>
+                    </div>
+                    </div>
+                    <div class="device-name">Bedroom</div>
+                    <div class="device-location">Air Conditioner</div>
+                    <div class="device-count">1 Device</div>
+                </div>
+
+                <div class="device-card">
+                    <div class="dev">
+                        <img id="img_light_main" class="ml" src="./img/light_off.png" alt="ml">
+                        <div class="Switch__container">
+                            <label class="switch">
+                                <input id="sw_light_main" type="checkbox">
+                                <div>
+                                    <span></span>
+                                </div>
+                            </label>
+                        </div>
+                        </div>
+                    <div class="device-name">Bedroom</div>
+                    <div class="device-location">Main Lights</div>
+                    <div class="device-count">2 Devices</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Connected Devices</div>
+
+        <div class="room-tabs">
+            <a href="./Livingroom.html" target="_blank">
+            <button class="room-tab" type="button">Living Room</button>
+            </a>
+            <a href="./Bedroom.html" target="_blank">
+            <button class="room-tab" type="button">Bedroom</button>
+            </a>
+            <a href="./Kitchen.html" target="_blank">
+            <button class="room-tab" type="button">Kitchen</button>
+            </a>
+            <a href="./Bathroom.html" target="_blank">
+            <button class="room-tab" type="button">Bathroom</button>
+            </a>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-item active">
+                <div class="nav-icon">🏠</div>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">▦</div>
+                <span></span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">⏱</div>
+                <span></span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">👤</div>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <script src="./control.js"></script>
+</body>
+
+</html>

@@ -5,8 +5,8 @@
 #include <Firebase_ESP_Client.h>
 
 // WiFi Configuration
-const char* ssid = "Wokwi-GUEST";
-const char* password = "";
+#define WIFI_SSID "Chi My"
+#define WIFI_PASSWORD "88888888"
 
 // Firebase Configuration
 const char* databaseURL = "https://tt-iot-on-off-lamp-default-rtdb.firebaseio.com";
@@ -14,7 +14,7 @@ const char* FIREBASE_AUTH = "uy48EQ0HOLfrzINFFVpADzQrw2LhOQ7OJzix8c1Y";
 
 // DHT Configuration
 #define DHT_PIN 23
-#define DHTTYPE DHT22
+#define DHTTYPE DHT11
 DHTesp dht; // Changed to DHTesp instead of DHT to match the library
 
 FirebaseData firebaseData;
@@ -30,7 +30,7 @@ void setup() {
   Serial.begin(9600);
 
   // WiFi Connection
-  WiFi.begin(ssid, password);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
     Serial.println("Connecting to WiFi...");
