@@ -1,0 +1,10 @@
+{
+  "TT_IOT_on_off_Lamp": {
+    "Lamp_01": 1,
+    "Lamp_02": 1,
+    "Lamp_03": 1,
+    "Lamp_04": 1,
+    "Temp": 21,
+    "humidity": 57
+  }
+}
